@@ -50,7 +50,7 @@ function refresh_item_table(){
 		if (item[i]["seller_num"] > 0){
 			$("#resultTable_stock").append(
 				`<div class="col-lg-3">
-					<img class="img-circle" src=${item[i]["image_src"]} alt="Generic placeholder image" width="140" height="140">
+					<img class="img-circle" src="${item[i]["image_src"]}" alt="Generic placeholder image" width="140" height="140">
 					<h2>${item[i]["item_name"]}</h2>
 					<p>Lowest Price : $ ${item[i]["min_price"]}</p>
 					<p><a class="btn btn-default" href=${product_page_url} role="button">View details &raquo;</a></p>
@@ -59,7 +59,7 @@ function refresh_item_table(){
 		}else {
 			$("#resultTable_nostock").append(
 				`<div class="col-lg-3">
-					<img class="img-circle" src=${item[i]["image_src"]} alt="Generic placeholder image" width="140" height="140">
+					<img class="img-circle" src="${item[i]["image_src"]}" alt="Generic placeholder image" width="140" height="140">
 					<h2>${item[i]["item_name"]}</h2>
 					<p>Lowest Price : "No stock"</p>
 					<p><a class="btn btn-default" href=${product_page_url} role="button">View details &raquo;</a></p>
